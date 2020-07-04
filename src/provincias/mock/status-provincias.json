@@ -1,0 +1,14 @@
+[
+  {
+    "provincia": "caba",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  }
+]

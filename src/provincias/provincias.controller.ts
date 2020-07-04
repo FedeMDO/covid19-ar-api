@@ -1,19 +1,27 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Controller, Get, Param, Query } from '@nestjs/common';
 import { ProvinciasService } from './provincias.service';
 import ProvinciaDTO from './provincias.dto';
+import { ProvinciasParams } from './provincias.interfaces';
 
 @Controller('provincias')
 export class ProvinciasController {
   constructor(private readonly provService: ProvinciasService) {}
 
   @Get()
-  async getAll(): Promise<ProvinciaDTO[]> {
-    return this.provService.getProvincias();
+  async getAll(
+    @Query() params: Partial<ProvinciasParams>,
+  ): Promise<ProvinciaDTO[]> {
+    return this.provService.getProvincias(params);
   }
 
-  // TODO : cambiar nombre por id
-  @Get('/:nombre')
-  async getOne(@Param('nombre') nombre): Promise<ProvinciaDTO[]> {
-    return this.provService.getProvincias(nombre);
+  @Get('/:id')
+  async getOne(
+    @Param('id') id,
+    @Query() params: Partial<ProvinciasParams>,
+  ): Promise<ProvinciaDTO[]> {
+    // destroy params provincia
+    delete params.provincia;
+
+    return this.provService.getProvincias({ id, ...params });
   }
 }

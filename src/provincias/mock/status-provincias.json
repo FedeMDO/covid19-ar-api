@@ -1,6 +1,309 @@
 [
   {
-    "provincia": "caba",
+    "id_provincia": "1",
+    "provincia": "Misiones",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "2",
+    "provincia": "San Luis",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "3",
+    "provincia": "San Juan",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "4",
+    "provincia": "Entre Ríos",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "5",
+
+    "provincia": "Santa Cruz",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "6",
+    "provincia": "Río Negro",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "7",
+    "provincia": "Chubut",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "8",
+    "provincia": "Córdoba",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "9",
+    "provincia": "Mendoza",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "10",
+    "provincia": "La Rioja",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "11",
+    "provincia": "Catamarca",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "12",
+    "provincia": "La Pampa",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "13",
+    "provincia": "Santiago del Estero",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "14",
+
+    "provincia": "Corrientes",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "15",
+
+    "provincia": "Santa Fe",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "16",
+    "provincia": "Tucumán",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "17",
+    "provincia": "Neuquén",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "18",
+    "provincia": "Salta",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "19",
+    "provincia": "Chaco",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "20",
+    "provincia": "Formosa",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "21",
+    "provincia": "Jujuy",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "22",
+    "provincia": "CABA",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "23",
+    "provincia": "Buenos Aires",
+    "fecha": "2020-07-04",
+    "confirmados": {
+      "total": 14323,
+      "nuevos": 235
+    },
+    "muertes": {
+      "total": 80,
+      "nuevos": 10
+    }
+  },
+  {
+    "id_provincia": "24",
+    "provincia": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
     "fecha": "2020-07-04",
     "confirmados": {
       "total": 14323,

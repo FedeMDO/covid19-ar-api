@@ -11,20 +11,7 @@ export class ProvinciasService {
     let result = new Array<ProvinciaDTO>();
 
     if (params.id || params.provincia) {
-      // si prioriza la existencia de un id en la consulta
-      if (this.validateString(params.id)) {
-        result = MOCK_DATA.filter(
-          x => this.normalizarNombreProvincia(x.id_provincia) === params.id,
-        );
-      } else if (this.validateString(params.provincia)) {
-        const nombreAproximado = this.normalizarNombreProvincia(
-          params.provincia,
-        );
-        result = MOCK_DATA.filter(
-          x => this.normalizarNombreProvincia(x.provincia) === nombreAproximado,
-        );
-      }
-
+      result = this.filterByProvincia(params, MOCK_DATA);
       if (result.length === 0) {
         throw new NotFoundException(
           null,
@@ -56,5 +43,25 @@ export class ProvinciasService {
 
   validateString(str: string): boolean {
     return typeof str === 'string' && str.length > 0;
+  }
+
+  filterByProvincia(
+    params: Partial<ProvinciasParams>,
+    data: ProvinciaDTO[],
+  ): ProvinciaDTO[] {
+    let result = new Array<ProvinciaDTO>();
+
+    // si prioriza la existencia de un id en la consulta
+    if (this.validateString(params.id)) {
+      result = data.filter(
+        x => this.normalizarNombreProvincia(x.id_provincia) === params.id,
+      );
+    } else if (this.validateString(params.provincia)) {
+      const nombreAproximado = this.normalizarNombreProvincia(params.provincia);
+      result = data.filter(
+        x => this.normalizarNombreProvincia(x.provincia) === nombreAproximado,
+      );
+    }
+    return result;
   }
 }

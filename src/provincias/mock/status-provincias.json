@@ -1,6 +1,6 @@
 [
   {
-    "id_provincia": "1",
+    "id_provincia": "54",
     "provincia": "Misiones",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -13,7 +13,7 @@
     }
   },
   {
-    "id_provincia": "2",
+    "id_provincia": "74",
     "provincia": "San Luis",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -26,7 +26,7 @@
     }
   },
   {
-    "id_provincia": "3",
+    "id_provincia": "70",
     "provincia": "San Juan",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -39,7 +39,7 @@
     }
   },
   {
-    "id_provincia": "4",
+    "id_provincia": "30",
     "provincia": "Entre Ríos",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -52,8 +52,7 @@
     }
   },
   {
-    "id_provincia": "5",
-
+    "id_provincia": "78",
     "provincia": "Santa Cruz",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -66,7 +65,7 @@
     }
   },
   {
-    "id_provincia": "6",
+    "id_provincia": "62",
     "provincia": "Río Negro",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -79,7 +78,7 @@
     }
   },
   {
-    "id_provincia": "7",
+    "id_provincia": "26",
     "provincia": "Chubut",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -92,7 +91,7 @@
     }
   },
   {
-    "id_provincia": "8",
+    "id_provincia": "14",
     "provincia": "Córdoba",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -105,7 +104,7 @@
     }
   },
   {
-    "id_provincia": "9",
+    "id_provincia": "50",
     "provincia": "Mendoza",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -118,7 +117,7 @@
     }
   },
   {
-    "id_provincia": "10",
+    "id_provincia": "46",
     "provincia": "La Rioja",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -131,7 +130,7 @@
     }
   },
   {
-    "id_provincia": "11",
+    "id_provincia": "10",
     "provincia": "Catamarca",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -144,7 +143,7 @@
     }
   },
   {
-    "id_provincia": "12",
+    "id_provincia": "42",
     "provincia": "La Pampa",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -157,7 +156,7 @@
     }
   },
   {
-    "id_provincia": "13",
+    "id_provincia": "86",
     "provincia": "Santiago del Estero",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -170,7 +169,7 @@
     }
   },
   {
-    "id_provincia": "14",
+    "id_provincia": "18",
 
     "provincia": "Corrientes",
     "fecha": "2020-07-04",
@@ -184,7 +183,7 @@
     }
   },
   {
-    "id_provincia": "15",
+    "id_provincia": "82",
 
     "provincia": "Santa Fe",
     "fecha": "2020-07-04",
@@ -198,7 +197,7 @@
     }
   },
   {
-    "id_provincia": "16",
+    "id_provincia": "90",
     "provincia": "Tucumán",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -211,7 +210,7 @@
     }
   },
   {
-    "id_provincia": "17",
+    "id_provincia": "58",
     "provincia": "Neuquén",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -224,7 +223,7 @@
     }
   },
   {
-    "id_provincia": "18",
+    "id_provincia": "66",
     "provincia": "Salta",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -237,7 +236,7 @@
     }
   },
   {
-    "id_provincia": "19",
+    "id_provincia": "22",
     "provincia": "Chaco",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -250,7 +249,7 @@
     }
   },
   {
-    "id_provincia": "20",
+    "id_provincia": "34",
     "provincia": "Formosa",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -263,7 +262,7 @@
     }
   },
   {
-    "id_provincia": "21",
+    "id_provincia": "38",
     "provincia": "Jujuy",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -276,7 +275,7 @@
     }
   },
   {
-    "id_provincia": "22",
+    "id_provincia": "02",
     "provincia": "CABA",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -289,7 +288,7 @@
     }
   },
   {
-    "id_provincia": "23",
+    "id_provincia": "06",
     "provincia": "Buenos Aires",
     "fecha": "2020-07-04",
     "confirmados": {
@@ -302,7 +301,7 @@
     }
   },
   {
-    "id_provincia": "24",
+    "id_provincia": "94",
     "provincia": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
     "fecha": "2020-07-04",
     "confirmados": {

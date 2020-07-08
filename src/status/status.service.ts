@@ -3,7 +3,7 @@ import {
   NotFoundException,
   BadRequestException,
 } from '@nestjs/common';
-import * as MOCK_DATA from './mock/status-provincias.json';
+// import * as MOCK_DATA from './mock/status-provincias.json';
 import { StatusParams } from './status.interfaces';
 import StatusDTO from './status.dto';
 import { InjectModel } from '@nestjs/mongoose';

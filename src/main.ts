@@ -13,6 +13,11 @@ async function bootstrap() {
       'API de casos de COVID19 en Argentina a nivel nacional, provincial y departamental. Las fechas deben pasarse en formato Date ISO 8601 (yyyy-mm-dd)',
     )
     .setVersion('1.0')
+    .setContact(
+      'Federico Montes de Oca',
+      'https://github.com/FedeMDO',
+      'federicomdo97@gmail.com',
+    )
     .build();
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup('api', app, document);

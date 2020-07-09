@@ -16,6 +16,31 @@ export class StatusService {
     @InjectModel(TerritoryStatus.name)
     private readonly statusModel: Model<TerritoryStatus>,
   ) {}
+
+  async getLatestPais(): Promise<StatusDTO> {
+    let queried = await this.statusModel
+      .find({ TerritorioID: 'ARG' }, '-_id')
+      .exec();
+    queried = queried.sort(function(a, b) {
+      return ('' + a.Fecha).localeCompare(b.Fecha);
+    });
+    return queried.pop();
+  }
+
+  async getLatestProvinciasAll(): Promise<StatusDTO[]> {
+    throw new Error('Method not implemented.');
+  }
+
+  async getLatestProvinciasById(id: string): Promise<StatusDTO> {
+    let queried = await this.statusModel
+      .find({ TerritorioID: id, TerritorioTipo: 'PROV' }, '-_id')
+      .exec();
+    queried = queried.sort(function(a, b) {
+      return ('' + a.Fecha).localeCompare(b.Fecha);
+    });
+    return queried.pop();
+  }
+
   async getProvinciasAll(params?: Partial<StatusParams>): Promise<StatusDTO[]> {
     const conditions = { TerritorioTipo: 'PROV' };
     this.agregarCondicionesFecha(params, conditions);

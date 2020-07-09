@@ -45,4 +45,29 @@ export class StatusController {
   ): Promise<StatusDTO[]> {
     return this.statusService.getProvinciasById(id, { desde, hasta });
   }
+
+  // latest
+  @Get('/latest/pais')
+  /**
+   * Devuelve el ultimo objeto registrado para el pais
+   */
+  async getLatestPais(): Promise<StatusDTO> {
+    return this.statusService.getLatestPais();
+  }
+
+  // @Get('/latest/provincias')
+  // async getLatestProvinciasAll(): Promise<StatusDTO[]> {
+  //   return this.statusService.getLatestProvinciasAll();
+  // }
+
+  @ApiParam({
+    name: 'id',
+    description: 'Código oficial de la provincia. Ej. Buenos Aires: 06',
+    example: '06',
+    enum: ProvinciaCodigo,
+  })
+  @Get('/latest/provincias/:id')
+  async getLatestProvinciasById(@Param('id') id: string): Promise<StatusDTO> {
+    return this.statusService.getLatestProvinciasById(id);
+  }
 }

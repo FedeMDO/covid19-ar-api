@@ -1,40 +1,35 @@
 import { Controller, Get, Param, Query } from '@nestjs/common';
 import { StatusService } from './status.service';
 import StatusDTO from './status.dto';
-import { StatusParams } from './status.interfaces';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('status')
 @Controller('status')
 export class StatusController {
   constructor(private readonly statusService: StatusService) {}
 
   @Get('/pais')
-  async getPais(@Query() params: Partial<StatusParams>): Promise<StatusDTO[]> {
-    return this.statusService.getPais(params);
+  async getPais(
+    @Query('desde') desde: string,
+    @Query('hasta') hasta: string,
+  ): Promise<StatusDTO[]> {
+    return this.statusService.getPais({ desde, hasta });
   }
 
   @Get('/provincias')
   async getProvinciasAll(
-    @Query() params: Partial<StatusParams>,
+    @Query('desde') desde: string,
+    @Query('hasta') hasta: string,
   ): Promise<StatusDTO[]> {
-    return this.statusService.getProvinciasAll(params);
+    return this.statusService.getProvinciasAll({ desde, hasta });
   }
 
   @Get('/provincias/:id')
   async getProvinciasById(
     @Param('id') id: string,
-    @Query() params: Partial<StatusParams>,
+    @Query('desde') desde: string,
+    @Query('hasta') hasta: string,
   ): Promise<StatusDTO[]> {
-    return this.statusService.getProvinciasById(id, params);
+    return this.statusService.getProvinciasById(id, { desde, hasta });
   }
-
-  // @Get('/:id')
-  // async getOne(
-  //   @Param('id') id,
-  //   @Query() params: Partial<StatusParams>,
-  // ): Promise<StatusDTO[]> {
-  //   // destroy params provincia
-  //   delete params.provincia;
-
-  //   return this.statusService.getStatuses({ id, ...params });
-  // }
 }

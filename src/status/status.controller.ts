@@ -2,6 +2,7 @@ import { Controller, Get, Param, Query } from '@nestjs/common';
 import { StatusService } from './status.service';
 import StatusDTO from './status.dto';
 import { ApiTags, ApiQuery, ApiParam } from '@nestjs/swagger';
+import { ProvinciaCodigo } from 'src/shared/enums';
 
 @ApiTags('status')
 @Controller('status')
@@ -32,6 +33,7 @@ export class StatusController {
     name: 'id',
     description: 'Código oficial de la provincia. Ej. Buenos Aires 06',
     example: '06',
+    enum: ProvinciaCodigo,
   })
   @ApiQuery({ name: 'desde', required: false, example: '2020-04-01' })
   @ApiQuery({ name: 'hasta', required: false, example: '2020-07-09' })

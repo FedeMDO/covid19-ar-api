@@ -1,11 +1,19 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
+import * as rateLimit from 'express-rate-limit';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   // app.setGlobalPrefix('v1');
   app.enableCors();
+
+  app.use(
+    rateLimit({
+      windowMs: 1 * 60 * 1000, // 1 min
+      max: 4 * 60, // limit each IP to 240 requests per windowMs
+    }),
+  );
 
   const options = new DocumentBuilder()
     .setTitle('COVID19 Status Argentina')

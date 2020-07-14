@@ -1,10 +1,10 @@
 {
   "name": "covid19-ar-api",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
-  "private": true,
-  "license": "UNLICENSED",
+  "description": "Public API server to publish data about COVID19 status in Argentina (confirmed cases, deaths, recovered) and his pronvices and cities",
+  "author": "Federico MONTES DE OCA",
+  "private": false,
+  "license": "MIT",
   "engines": {
     "node": "12.x"
   },

@@ -1,0 +1,31 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ProvinciaCodigo = void 0;
+var ProvinciaCodigo;
+(function (ProvinciaCodigo) {
+    ProvinciaCodigo["CABA"] = "02";
+    ProvinciaCodigo["C\u00F3rdoba"] = "14";
+    ProvinciaCodigo["Buenos Aires"] = "06";
+    ProvinciaCodigo["R\u00EDo Negro"] = "62";
+    ProvinciaCodigo["Chaco"] = "22";
+    ProvinciaCodigo["San Luis"] = "74";
+    ProvinciaCodigo["Tierra del Fuego"] = "94";
+    ProvinciaCodigo["Santa Fe"] = "82";
+    ProvinciaCodigo["Entre R\u00EDos"] = "30";
+    ProvinciaCodigo["Tucum\u00E1n"] = "90";
+    ProvinciaCodigo["Jujuy"] = "38";
+    ProvinciaCodigo["Salta"] = "66";
+    ProvinciaCodigo["Santa Cruz"] = "78";
+    ProvinciaCodigo["Neuqu\u00E9n"] = "58";
+    ProvinciaCodigo["Santiago del Estero"] = "86";
+    ProvinciaCodigo["Mendoza"] = "50";
+    ProvinciaCodigo["Corrientes"] = "18";
+    ProvinciaCodigo["La Pampa"] = "42";
+    ProvinciaCodigo["Misiones"] = "54";
+    ProvinciaCodigo["La Rioja"] = "46";
+    ProvinciaCodigo["San Juan"] = "70";
+    ProvinciaCodigo["Chubut"] = "26";
+    ProvinciaCodigo["Formosa"] = "34";
+    ProvinciaCodigo["Catamarca"] = "10";
+})(ProvinciaCodigo = exports.ProvinciaCodigo || (exports.ProvinciaCodigo = {}));
+//# sourceMappingURL=enums.js.map

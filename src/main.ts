@@ -20,7 +20,9 @@ async function bootstrap() {
     )
     .build();
   const document = SwaggerModule.createDocument(app, options);
-  SwaggerModule.setup('api', app, document);
+  SwaggerModule.setup('api', app, document, {
+    customSiteTitle: 'COVID19 Argentina API',
+  });
 
   await app.listen(process.env.PORT || 80);
 }

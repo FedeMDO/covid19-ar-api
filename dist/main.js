@@ -13,7 +13,9 @@ async function bootstrap() {
         .setContact('Federico Montes de Oca', 'https://github.com/FedeMDO', 'federicomdo97@gmail.com')
         .build();
     const document = swagger_1.SwaggerModule.createDocument(app, options);
-    swagger_1.SwaggerModule.setup('api', app, document);
+    swagger_1.SwaggerModule.setup('api', app, document, {
+        customSiteTitle: 'COVID19 Argentina API',
+    });
     await app.listen(process.env.PORT || 80);
 }
 bootstrap();

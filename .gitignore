@@ -1,5 +1,5 @@
 # compiled output
-/dist
+#/dist heroku wake up faster
 /node_modules
 
 # Logs
